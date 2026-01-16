@@ -1,13 +1,18 @@
 import java.util.Scanner;
-public class star_2
-{
-    public static void main()
+
+public class PatternPrinting {
+    public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-	    System.out.println("Enter n: ");
         int n=sc.nextInt();
-        for(int i=0;i<n;i++) 
+        for (int i = 0; i < n; i++) 
+        {
+        if (i == n - 1)
+            System.out.print("*");
+        else
             System.out.print("* ");
+        }
+        System.out.println();
         for(int i=0;i<n;i++) 
             System.out.println("*");
     }
